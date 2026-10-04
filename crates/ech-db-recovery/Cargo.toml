@@ -1,0 +1,21 @@
+[package]
+name = "ech-db-recovery"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "ech-db-recovery"
+path = "src/main.rs"
+
+[dependencies]
+ech-db-server = { path = "../ech-db-server" }
+ech-db-protocol = { path = "../ech-db-protocol" }
+foundationdb.workspace = true
+tokio.workspace = true
+futures.workspace = true
+clap.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+bcs.workspace = true
+thiserror.workspace = true
+hex.workspace = true

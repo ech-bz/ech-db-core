@@ -1,0 +1,12 @@
+[package]
+name = "ech-db-guest"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+crate-type = ["rlib", "cdylib"]
+
+[dependencies]
+ech-db-protocol = { path = "../ech-db-protocol" }
+bcs.workspace = true
+serde.workspace = true

@@ -1,0 +1,15 @@
+[package]
+name = "ech-db-fault-injection"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+ech-db-protocol = { path = "../../crates/ech-db-protocol" }
+ech-db-server = { path = "../../crates/ech-db-server" }
+ech-db-test-fixtures = { path = "../fixtures" }
+foundationdb-tuple.workspace = true
+tokio.workspace = true
+futures.workspace = true
+bcs.workspace = true
+rand.workspace = true
+ed25519-dalek.workspace = true

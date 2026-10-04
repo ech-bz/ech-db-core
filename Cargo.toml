@@ -1,0 +1,54 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/ech-db-protocol",
+    "crates/ech-db-guest",
+    "crates/ech-db-server",
+    "crates/ech-db-client",
+    "crates/ech-db-recovery",
+    "tests/integration",
+    "tests/fault-injection",
+    "tests/fixtures",
+    "examples/counter-program",
+    "examples/counter-client",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+
+[workspace.dependencies]
+bcs = "0.2.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+foundationdb-tuple = "0.11.0"
+foundationdb = { version = "0.11.0", default-features = false, features = ["fdb-7_3"] }
+blake2b_simd = "1.0.5"
+ed25519-dalek = "3.0.0"
+rand = "0.9"
+tokio = { version = "1.53", features = ["rt-multi-thread", "macros", "signal", "time", "sync", "net", "io-util"] }
+tokio-stream = "0.1"
+tonic = { version = "0.14.6", features = ["tls-aws-lc", "tls-webpki-roots"] }
+futures = "0.3"
+wasmi = { version = "2.0.0", features = ["deterministic"] }
+wasmi_core = "2.0.0"
+clap = { version = "4.6", features = ["derive"] }
+toml = "0.9"
+thiserror = "2.0"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+aws-sdk-s3 = "1.152"
+aws-credential-types = "1.2"
+wasmparser = "0.228.0"
+wat = "1"
+base64 = "0.22"
+hex = "0.4"
+bytes = "1"
+sui-rpc = "0.4.0"
+sui-sdk-types = { version = "0.4.0", features = ["serde"] }
+sui-crypto = { version = "0.4.0", features = ["ed25519"] }
+sui-transaction-builder = "0.4.0"
+prost-types = "0.14.1"
+
+[profile.release]
+panic = "abort"

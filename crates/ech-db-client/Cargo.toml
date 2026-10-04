@@ -1,0 +1,17 @@
+[package]
+name = "ech-db-client"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+ech-db-protocol = { path = "../ech-db-protocol" }
+tokio.workspace = true
+tokio-stream.workspace = true
+tonic.workspace = true
+futures.workspace = true
+bcs.workspace = true
+serde.workspace = true
+ed25519-dalek.workspace = true
+rand.workspace = true
+bytes.workspace = true
+thiserror.workspace = true

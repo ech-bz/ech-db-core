@@ -1,0 +1,6 @@
+[package]
+name = "ech_anchor"
+edition = "2024.beta"
+
+[addresses]
+ech_anchor = "0x0"

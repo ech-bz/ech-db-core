@@ -1,0 +1,25 @@
+[package]
+name = "ech-db-test-fixtures"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+ech-db-protocol = { path = "../../crates/ech-db-protocol" }
+ech-db-server = { path = "../../crates/ech-db-server" }
+ech-db-client = { path = "../../crates/ech-db-client" }
+foundationdb.workspace = true
+tokio.workspace = true
+tokio-stream.workspace = true
+tonic.workspace = true
+sui-rpc.workspace = true
+sui-sdk-types.workspace = true
+serde.workspace = true
+bcs.workspace = true
+serde_json.workspace = true
+rand.workspace = true
+ed25519-dalek.workspace = true
+aws-sdk-s3.workspace = true
+aws-credential-types.workspace = true
+hex.workspace = true
+base64.workspace = true
+wat.workspace = true

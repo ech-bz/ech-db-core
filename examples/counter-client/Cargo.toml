@@ -1,0 +1,17 @@
+[package]
+name = "counter-client"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "counter-client"
+path = "src/main.rs"
+
+[dependencies]
+ech-db-client = { path = "../../crates/ech-db-client" }
+ech-db-protocol = { path = "../../crates/ech-db-protocol" }
+tokio.workspace = true
+bcs.workspace = true
+serde.workspace = true
+clap.workspace = true
+hex.workspace = true

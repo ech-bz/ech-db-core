@@ -1,0 +1,12 @@
+[package]
+name = "ech-db-protocol"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+bcs.workspace = true
+serde.workspace = true
+thiserror.workspace = true
+foundationdb-tuple.workspace = true
+blake2b_simd.workspace = true
+ed25519-dalek.workspace = true
